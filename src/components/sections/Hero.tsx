@@ -31,15 +31,14 @@ const Hero = () => {
 
   return (
     <section>
+      <hr className="h-px my-0 bg-gray-200 border-0" />
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12">
-        <div
-          className="mr-auto place-self-center order-last 
-          md:order-first md:col-span-7"
-        >
+        <div className="mr-auto place-self-center order-last md:order-first md:col-span-7">
           <h1
             className="max-w-2xl mb-2
             text-gray-600
-            text-xl font-bold tracking-wider leading-none
+            font-bold tracking-wider leading-none
+            text-xl
             xs:text-2xl
             sm:text-3xl 
             md:text-3xl
@@ -49,7 +48,7 @@ const Hero = () => {
             Hi, I'm{" "}
             <span
               className="text-transparent bg-clip-text 
-              bg-gradient-to-tr from-primary-700 to-pink-500"
+              bg-gradient-to-tr from-primary-800 to-pink-500"
             >
               Emmanuel ubachi
             </span>
@@ -87,7 +86,8 @@ const Hero = () => {
         <div className="my-8 md:hidden flex flex-col items-center justify-center order-first md:order-last">
           <div className=" max-w-sm flex flex-col items-center">
             <Image
-              className="rounded-r-[25px] shadow-[35px_30px_70px_-25px_rgba(0,0,0,0.3)] shadow-blue-200 drop-shadow-2xl"
+              className="rounded-r-[25px] 
+              shadow-[35px_30px_70px_-25px_rgba(0,0,0,0.3)] shadow-blue-200 drop-shadow-2xl"
               src={HeroImg}
               alt="A picture of Emmanuel Ubachi"
               style={{
@@ -99,8 +99,9 @@ const Hero = () => {
         </div>
         <div className=" hidden lg:mt-0 md:flex md:justify-end md:col-span-5">
           <Image
-            className="rounded-r-[25px] shadow-[35px_30px_70px_-25px_rgba(0,0,0,0.3)] shadow-blue-200 drop-shadow-2xl
-            transition-transform hover:scale-105 cursor-pointer"
+            className="rounded-r-[25px] 
+            shadow-[35px_30px_70px_-25px_rgba(0,0,0,0.3)] shadow-blue-200 drop-shadow-2xl
+            transition-transform hover:scale-100 cursor-pointer"
             src={HeroImg}
             alt="A picture of Emmanuel Ubachi"
             style={{

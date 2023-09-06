@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://ubachi.com/" className="flex items-center">
-          <span className="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap">
+          <span className="text-gray-600 self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap">
             uba
           </span>
           <span
@@ -21,7 +21,7 @@ const Navbar = () => {
             font-semibold 
             whitespace-nowrap 
             text-transparent bg-clip-text 
-            bg-gradient-to-tr from-primary-700 to-pink-600"
+            bg-gradient-to-tr from-primary-800 to-pink-500"
           >
             Chi
           </span>
@@ -29,9 +29,15 @@ const Navbar = () => {
         <div className="flex md:order-2">
           <button
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white 
+            bg-primary-900 
+            rounded-lg px-5 py-3 mr-3 md:mr-0
+            font-medium text-sm text-center
+            hover:bg-gradient-to-tr hover:from-primary-800 hover:to-pink-700
+            transition-transform hover:scale-110 cursor-pointer
+            focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
-            Get started
+            BOOK A CALL
           </button>
           {/* <button
             data-collapse-toggle="navbar-cta"

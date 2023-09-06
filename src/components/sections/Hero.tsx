@@ -110,7 +110,6 @@ const Hero = () => {
           />
         </div>
       </div>
-      <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0 dark:bg-gray-700" />
     </section>
   );
 };

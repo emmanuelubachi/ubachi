@@ -8,7 +8,6 @@ export default function Home() {
     <>
       <header className="mb-4">
         <Navbar />
-        <hr className="h-px my-0 bg-gray-200 border-0 dark:bg-gray-700" />
         <Hero />
       </header>
       <main>

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   darkMode: ["class"],
   // content: [
@@ -19,8 +19,8 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        xs: "475px",
-        ...defaultTheme.screens,
+        // xs: "475px",
+        // ...defaultTheme.screens,
         "2xl": "1400px",
       },
     },
@@ -56,5 +56,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("flowbite/plugin")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("flowbite/plugin"),
+    require("flowbite-typography"),
+  ],
 };

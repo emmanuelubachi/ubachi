@@ -58,9 +58,7 @@ const Resume = () => {
           <div>
             <ol className=" md:grid grid-flow-row grid-cols-2">
               {experienceList.map((item) => (
-                <li className="mb-10 ml-6 relative border-l border-gray-200">
-                  {item}
-                </li>
+                <li className="mb-10 ml-6">{item}</li>
               ))}
             </ol>
           </div>

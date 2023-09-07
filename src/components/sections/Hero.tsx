@@ -12,7 +12,7 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["a Data Scientist.", "a Developer."], // Strings to display
+      strings: ["a Data Scientist.", "a Developer.", "an AI App Developer."], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 0,
       typeSpeed: 50,
@@ -39,7 +39,7 @@ const Hero = () => {
             text-gray-600
             font-bold tracking-wider leading-none
             text-xl
-            xs:text-2xl
+            min-[400px]:text-2xl
             sm:text-3xl 
             md:text-3xl
             lg:text-4xl 
@@ -58,7 +58,7 @@ const Hero = () => {
             className="max-w-2xl mb-4 
             text-gray-600
             text-xl font-bold tracking-wider leading-none
-            xs:text-2xl
+            min-[400px]:text-2xl
             sm:text-3xl 
             md:text-3xl
             lg:text-4xl 
@@ -82,6 +82,20 @@ const Hero = () => {
             deployment, I'm your partner in leveraging data's power for a
             competitive edge. Explore the future of data-driven success with me.
           </p>
+          <div className="flex md:order-2">
+            <button
+              type="button"
+              className="text-white 
+            bg-primary-900 
+            rounded-lg px-5 py-3 mr-3 md:mr-0
+            font-medium text-sm text-center
+            hover:bg-gradient-to-tr hover:from-primary-800 hover:to-pink-700
+            transition-transform hover:scale-110 cursor-pointer
+            focus:ring-4 focus:outline-none focus:ring-blue-300"
+            >
+              BOOK A CALL
+            </button>
+          </div>
         </div>
         <div className="my-8 md:hidden flex flex-col items-center justify-center order-first md:order-last">
           <div className=" max-w-sm flex flex-col items-center">

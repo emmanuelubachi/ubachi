@@ -2,6 +2,29 @@ import React from "react";
 import FeatureCard from "../cards/FeatureCard";
 
 const Features = () => {
+  const featuresList = [
+    {
+      title: "title 1",
+      desc: "desc 1",
+    },
+    {
+      title: "title 2",
+      desc: "desc 2",
+    },
+    {
+      title: "title 3",
+      desc: "desc 3",
+    },
+    {
+      title: "title 4",
+      desc: "desc 4",
+    },
+    {
+      title: "title 5",
+      desc: "desc 5",
+    },
+  ];
+
   return (
     <section>
       <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" />
@@ -19,12 +42,14 @@ const Features = () => {
             Crafted with skill and care to help our clients grow their business!
           </p>
         </div>
-        <div className="flex flex-row flex-wrap gap-12 items-center justify-center">
-          <FeatureCard />
-          <FeatureCard />
-          <FeatureCard />
-          <FeatureCard />
-          <FeatureCard />
+        <div
+          className="flex flex-row flex-wrap  
+        items-center justify-center
+        xl:gap-12 lg:gap-8 gap-4"
+        >
+          {featuresList.map((items, index) => (
+            <FeatureCard key={index} title={items.title} desc={items.desc} />
+          ))}
         </div>
       </div>
     </section>

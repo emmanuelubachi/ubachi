@@ -9,13 +9,14 @@ export default function Home() {
   return (
     <>
       <header>
+        <Navbar />
         <Hero />
       </header>
       <main>
         <Features />
         <Projects />
         <Resume />
-        <Contact />
+        {/* <Contact /> */}
       </main>
     </>
   );

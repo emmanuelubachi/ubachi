@@ -25,11 +25,6 @@ const Resume = () => {
     <EducationCard />,
   ];
 
-  //   const customScrollbarStyles = {
-  //     scrollbarWidth: "none", // Firefox-specific property
-  //     "-ms-overflow-style": "none", // Internet Explorer-specific property
-  //   };
-
   return (
     <section>
       <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" />

@@ -37,25 +37,25 @@ const Features = () => {
     {
       title: "Uncover Impactful Insights",
 
-      desc: "I utilize statistical modeling and data mining techniques to uncover trends, patterns and actionable insights from complex data.",
+      desc: "Utilizing statistical modeling and data mining techniques to uncover trends, patterns and actionable insights from complex data.",
     },
 
     {
       title: "Building Intuitive Interfaces",
 
-      desc: "I develop responsive, user-friendly web applications and dashboards that bring data to life for users and stakeholders.",
+      desc: "Developing responsive, user-friendly web applications and dashboards that bring data to life for users and stakeholders.",
     },
 
     {
       title: "Telling Compelling Stories",
 
-      desc: "I create interactive data visualizations that intuitively communicate key information and insights to diverse audiences.",
+      desc: "Creating interactive data visualizations that intuitively communicate key information and insights to diverse audiences.",
     },
 
     {
       title: "Seamless Data Connectivity",
 
-      desc: "I integrate disparate data sources into cloud-based tools and applications for unified analytics and reporting.",
+      desc: "Integrating disparate data sources into cloud-based tools and applications for unified analytics and reporting.",
     },
 
     {

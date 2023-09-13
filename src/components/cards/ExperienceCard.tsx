@@ -1,14 +1,25 @@
 import React from "react";
 
 const ExperienceCard = () => {
+  const expHeader = "Flowbite Figma v1.3.0";
+  const expTime = "Released on December 7th, 2021";
+  const expDesc =
+    "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.";
+
   return (
     <div
-      className="p-8 rounded-e-3xl hover:bg-primary-200 
-    hover:"
+      className="relative group border-l-2 border-l-primary-800
+      p-8 rounded-e-3xl
+      bg-gradient-to-bl from-gray-200 to-white 
+      shadow-md shadow-gray-200
+      hover:bg-gradient-to-tr hover:from-primary-800 hover:to-pink-500 
+      text-gray-600 hover:text-white
+      transition ease-in-out
+      transform hover:-translate-y-3"
     >
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -left-3 ring-8 ring-white group-hover:bg-primary-800">
         <svg
-          className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+          className="w-2.5 h-2.5 text-primary-800 group-hover:text-white"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -17,15 +28,12 @@ const ExperienceCard = () => {
           <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
         </svg>
       </span>
-      <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-        Flowbite Figma v1.3.0
-      </h3>
-      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-        Released on December 7th, 2021
+      <h3 className="mb-1 text-lg font-semibold">{expHeader}</h3>
+      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 group-hover:text-gray-300">
+        {expTime}
       </time>
-      <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-        All of the pages and components are first designed in Figma and we keep
-        a parity between the two versions even as we update the project.
+      <p className="text-base font-light text-gray-500 group-hover:text-gray-200">
+        {expDesc}
       </p>
     </div>
   );

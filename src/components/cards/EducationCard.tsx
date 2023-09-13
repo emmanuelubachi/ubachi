@@ -3,7 +3,7 @@ import React from "react";
 const EducationCard = () => {
   return (
     <div
-      className="p-8 rounded-lg hover:bg-primary-200 
+      className="p-8 rounded-lg
     hover:"
     >
       <div className="flex items-center">

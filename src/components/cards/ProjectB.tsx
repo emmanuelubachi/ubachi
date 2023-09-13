@@ -12,34 +12,27 @@ const Projects = () => {
     <div>
       <div
         className="gap-8 items-center
-        mx-auto 
+        mx-auto
         max-w-screen-xl
-        md:grid md:grid-cols-2
+        grid md:grid-cols-2
         xl:gap-16"
       >
-        <img
-          className="w-full dark:hidden"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-          alt="dashboard image"
-        />
-        <img
-          className="w-full hidden dark:block"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
-          alt="dashboard image"
-        />
-        <div className="mt-4 md:mt-0">
+        <div className="mt-4 md:mt-0 order-last md:order-first">
           <h3
             className="mb-4 text-gray-600
-          tracking-tight 
-          font-bold 
+          tracking-tight
+          font-semibold
           text-xl
-          sm:text-3xl
+          sm:text-2xl
           md:text-2xl
-          lg:text-4xl"
+          lg:text-3xl"
           >
             {projHeader}
           </h3>
-          <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+          <p
+            className="mb-6 font-light text-gray-500 
+          lg:text-lg"
+          >
             {projDes}
           </p>
           <Link
@@ -66,6 +59,11 @@ const Projects = () => {
             </svg>
           </Link>
         </div>
+        <img
+          className="w-full p-4 order-first md:order-last"
+          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+          alt="dashboard image"
+        />
       </div>
     </div>
   );

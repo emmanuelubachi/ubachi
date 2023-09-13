@@ -7,29 +7,38 @@ const Projects = () => {
     "Let's create more tools and ideas that brings us together.";
   const projDes =
     "Flowbite helps you connect with friends and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.";
-  const projLink = "#";
+  const projLink = "/project/1";
   return (
     <div>
       <div
         className="gap-8 items-center
-        mx-auto
+        mx-auto 
         max-w-screen-xl
-        grid md:grid-cols-2
+        md:grid md:grid-cols-2
         xl:gap-16"
       >
-        <div className="mt-4 md:mt-0 order-last md:order-first">
+        <img
+          className="w-full p-4"
+          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+          alt="dashboard image"
+        />
+
+        <div className="mt-4 md:mt-0">
           <h3
-            className="b-4 text-gray-600
+            className="mb-4 text-gray-600
           tracking-tight 
-          font-bold 
+          font-semibold
           text-xl
-          sm:text-3xl
+          sm:text-2xl
           md:text-2xl
-          lg:text-4xl"
+          lg:text-3xl"
           >
             {projHeader}
           </h3>
-          <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+          <p
+            className="mb-6 font-light text-gray-500 
+          lg:text-lg"
+          >
             {projDes}
           </p>
           <Link
@@ -56,11 +65,6 @@ const Projects = () => {
             </svg>
           </Link>
         </div>
-        <img
-          className="w-full dark:hidden order-first md:order-last"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-          alt="dashboard image"
-        />
       </div>
     </div>
   );

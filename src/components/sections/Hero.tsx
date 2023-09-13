@@ -30,7 +30,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section>
+    <section className="mt-12">
       <hr className="h-px my-0 bg-gray-200 border-0" />
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12">
         <div className="mr-auto place-self-center order-last md:order-first md:col-span-7">

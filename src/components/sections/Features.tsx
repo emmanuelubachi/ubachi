@@ -3,30 +3,70 @@ import FeatureCard from "../cards/FeatureCard";
 
 const Features = () => {
   const featuresList = [
+    // {
+    //   title: "Data-Powered Web Solution",
+    //   //desc: "Turning Data into Dynamic Web Experiences: We specialize in crafting web solutions that seamlessly integrate data, delivering interactive and insightful user experiences.",
+    //   desc: "Turning Data into Dynamic Web Experiences: Crafting web solutions that seamlessly integrate with your data.",
+    // },
+    // {
+    //   title: "Visualize Your Data",
+    //   //desc: "Bringing Data to Life: Our expertise lies in crafting captivating data visualizations that make complex information easy to understand and appreciate.",
+    //   desc: "Bringing Data to Life: Creating captivating data visualizations that simplify complex information.",
+    // },
+    // // {
+    // //   title: "Real-time Data Mastery",
+    // //   //desc: "Harnessing the Power of Data in Real-Time: We build responsive platforms that empower you to monitor, analyze, and act on data as it unfolds.",
+    // //   desc: "Harnessing Real-Time Data Power: Building responsive platforms for monitoring and analyzing data in real-time.",
+    // // },
+    // {
+    //   title: "Data-Enhanced Web Presence",
+    //   //desc: "Elevating Your Web Presence with Data: Our data-enhanced websites engage and inform users, making your web presence truly impactful.",
+    //   desc: "Elevating Web Presence with Data: Engaging and informing users with data-enhanced websites.",
+    // },
+    // {
+    //   title: "Performance Optimization",
+    //   //desc: "Fast, Flawless, and Functional: We optimize web applications for lightning-fast performance, ensuring an exceptional user experience.",
+    //   desc: "Fast, Flawless Web Performance: Optimizing web applications for lightning-fast, user-friendly experiences.",
+    // },
+    // {
+    //   title: "Insightful Data Dashboards",
+    //   //desc: "Unveiling Insights at a Glance: We create interactive data dashboards that provide a clear, real-time view of your data, empowering decision-makers.",
+    //   desc: "Clear Insights at a Glance: Designing interactive data dashboards for informed decision-making.",
+    // },
+
     {
-      title: "title 1",
-      desc: "desc 1",
+      title: "Uncover Impactful Insights",
+
+      desc: "I utilize statistical modeling and data mining techniques to uncover trends, patterns and actionable insights from complex data.",
     },
+
     {
-      title: "title 2",
-      desc: "desc 2",
+      title: "Building Intuitive Interfaces",
+
+      desc: "I develop responsive, user-friendly web applications and dashboards that bring data to life for users and stakeholders.",
     },
+
     {
-      title: "title 3",
-      desc: "desc 3",
+      title: "Telling Compelling Stories",
+
+      desc: "I create interactive data visualizations that intuitively communicate key information and insights to diverse audiences.",
     },
+
     {
-      title: "title 4",
-      desc: "desc 4",
+      title: "Seamless Data Connectivity",
+
+      desc: "I integrate disparate data sources into cloud-based tools and applications for unified analytics and reporting.",
     },
+
     {
-      title: "title 5",
-      desc: "desc 5",
+      title: "Actionable Predictive Modeling",
+
+      desc: "I build, evaluate and implement machine learning models to uncover predictive insights from data.",
     },
   ];
 
   return (
-    <section>
+    <section id="features" className="pt-12">
       <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" />
       <div className="max-w-screen-xl m-auto px-4 py-8 lg:px-6 sm:py-16 lg:py-24">
         <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-20">
@@ -39,13 +79,13 @@ const Features = () => {
             sm:text-lg
           text-gray-500"
           >
-            Crafted with skill and care to help our clients grow their business!
+            Empowering Data-Driven Web Solutions!
           </p>
         </div>
         <div
           className="flex flex-row flex-wrap  
         items-center justify-center
-        xl:gap-12 lg:gap-8 gap-4"
+        xl:gap-12 lg:gap-12 gap-4"
         >
           {featuresList.map((items, index) => (
             <FeatureCard key={index} title={items.title} desc={items.desc} />

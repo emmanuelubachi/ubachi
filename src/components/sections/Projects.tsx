@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import HeroImg from "/public/eu1.png";
-import ProjectA from "../projects/ProjectA";
-import ProjectB from "../projects/ProjectB";
+import ProjectA from "../cards/ProjectA";
+import ProjectB from "../cards/ProjectB";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects" className="pt-12">
       <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" />
       <div className="max-w-screen-xl m-auto px-4 py-8 lg:px-6 sm:py-16 lg:py-24">
         <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-20">

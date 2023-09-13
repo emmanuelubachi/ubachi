@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact" className="pt-12">
       <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" />
       <div className="max-w-screen-xl m-auto px-4 py-8 lg:px-6 sm:py-16 lg:py-24">
         {/* Contact Section Heading */}

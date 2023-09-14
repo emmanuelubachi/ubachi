@@ -38,7 +38,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-20 top-0 left-0 bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="fixed w-full z-20 top-0 left-0 bg-white dark:bg-gray-900 border-b border-primary-50 shadow-lg shadow-primary-50">
       <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://ubachi.com/" className="flex items-center">
           <span className="text-gray-600 self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap">
@@ -67,7 +67,7 @@ const Navbar = () => {
             font-medium 
             text-xs sm:text-sm text-center
             hover:bg-gradient-to-tr hover:from-primary-800 hover:to-pink-700
-            transition-transform hover:scale-110 cursor-pointer
+            transition-transform ease-in-out duration-500 hover:scale-110 cursor-pointer
             focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
             BOOK A CALL

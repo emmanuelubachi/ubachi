@@ -2,14 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Projects = () => {
-  const projHeader =
-    "Let's create more tools and ideas that brings us together.";
-  const projDes =
-    "Flowbite helps you connect with friends and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.";
-  const projLink = "/project/1";
+const ProjectA = ({
+  title,
+  desc,
+  imgSrc,
+  imgAlt,
+  projUrl,
+}: ProjectCardProps) => {
   return (
-    <div>
+    <div className="sm:mb-4">
       <div
         className="gap-8 items-center
         mx-auto 
@@ -17,10 +18,12 @@ const Projects = () => {
         md:grid md:grid-cols-2
         xl:gap-16"
       >
-        <img
-          className="w-full p-4"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-          alt="dashboard image"
+        <Image
+          className="w-full p-1 rounded-lg"
+          src={imgSrc}
+          alt={imgAlt}
+          width={500}
+          height={400}
         />
 
         <div className="mt-4 md:mt-0">
@@ -33,16 +36,17 @@ const Projects = () => {
           md:text-2xl
           lg:text-3xl"
           >
-            {projHeader}
+            {title}
           </h3>
           <p
             className="mb-6 font-light text-gray-500 
           lg:text-lg"
           >
-            {projDes}
+            {desc}
           </p>
           <Link
-            href={projLink}
+            href={projUrl}
+            target="_blank"
             className="inline-flex items-center text-white 
             bg-primary-900 
             hover:bg-gradient-to-tr hover:from-primary-800 hover:to-pink-700
@@ -70,4 +74,12 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+ProjectA.deafaltProps = {
+  title: "Building Intuitive Interfaces",
+  desc: "Developing responsive, user-friendly web applications and dashboards that bring data to life for users and stakeholders.",
+  imgSrc: "string",
+  imgAlt: "string",
+  projUrl: "string",
+};
+
+export default ProjectA;

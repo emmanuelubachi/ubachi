@@ -30,8 +30,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="mt-12">
-      <hr className="h-px my-0 bg-gray-200 border-0" />
+    <section className="min-[1440px]:mt-8 mt-2">
+      {/* <hr className="h-px my-0 bg-gray-200 border-0" /> */}
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto md:gap-8 xl:gap-0 lg:py-16 md:grid-cols-12">
         <div className="mr-auto place-self-center order-last md:order-first md:col-span-7">
           <h1
@@ -86,12 +86,14 @@ const Hero = () => {
             <button
               type="button"
               className="text-white 
-            bg-primary-900 
-            rounded-lg px-5 py-3 mr-3 md:mr-0
-            font-medium text-sm text-center
-            hover:bg-gradient-to-tr hover:from-primary-800 hover:to-pink-700
-            transition-transform hover:scale-110 cursor-pointer
-            focus:ring-4 focus:outline-none focus:ring-blue-300"
+              bg-primary-900 
+              rounded-lg 
+              px-5 py-3 
+              mr-3 md:mr-0
+              font-medium text-sm text-center
+              hover:bg-gradient-to-tr hover:from-primary-800 hover:to-pink-700
+              transition-transform ease-in-out duration-500 hover:scale-110 cursor-pointer
+              focus:ring-4 focus:outline-none focus:ring-blue-300"
             >
               BOOK A CALL
             </button>

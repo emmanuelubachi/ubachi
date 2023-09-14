@@ -1,5 +1,12 @@
 import React from "react";
 import FeatureCard from "../cards/FeatureCard";
+import {
+  faChain,
+  faChartArea,
+  faChartBar,
+  faChartLine,
+  faDesktop,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Features = () => {
   const featuresList = [
@@ -35,39 +42,39 @@ const Features = () => {
     // },
 
     {
+      icon: faChartBar,
       title: "Uncover Impactful Insights",
-
       desc: "Utilizing statistical modeling and data mining techniques to uncover trends, patterns and actionable insights from complex data.",
     },
 
     {
+      icon: faDesktop,
       title: "Building Intuitive Interfaces",
-
       desc: "Developing responsive, user-friendly web applications and dashboards that bring data to life for users and stakeholders.",
     },
 
     {
+      icon: faChartLine,
       title: "Telling Compelling Stories",
-
       desc: "Creating interactive data visualizations that intuitively communicate key information and insights to diverse audiences.",
     },
 
     {
+      icon: faChain,
       title: "Seamless Data Connectivity",
-
       desc: "Integrating disparate data sources into cloud-based tools and applications for unified analytics and reporting.",
     },
 
     {
+      icon: faChartArea,
       title: "Actionable Predictive Modeling",
-
       desc: "I build, evaluate and implement machine learning models to uncover predictive insights from data.",
     },
   ];
 
   return (
     <section id="features" className="pt-12">
-      <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" />
+      {/* <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" /> */}
       <div className="max-w-screen-xl m-auto px-4 py-8 lg:px-6 sm:py-16 lg:py-24">
         <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-20">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-primary-900 sm:text-4xl">
@@ -88,7 +95,12 @@ const Features = () => {
         xl:gap-12 lg:gap-12 gap-4"
         >
           {featuresList.map((items, index) => (
-            <FeatureCard key={index} title={items.title} desc={items.desc} />
+            <FeatureCard
+              key={index}
+              title={items.title}
+              desc={items.desc}
+              iconName={items.icon}
+            />
           ))}
         </div>
       </div>

@@ -4,30 +4,39 @@ import EducationCard from "../cards/EducationCard";
 
 const Resume = () => {
   const experienceList = [
-    <ExperienceCard />,
-    <ExperienceCard />,
-    <ExperienceCard />,
-    <ExperienceCard />,
-    <ExperienceCard />,
+    {
+      title: "This is the Title",
+      time: "Released on December 7th, 2021",
+      desc: "This is a long description",
+    },
   ];
 
   const educationList = [
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
-    <EducationCard />,
+    {
+      title: "This is the Title",
+      time: "Released on December 7th, 2021",
+      desc: "This is a long description",
+    },
+    {
+      title: "This is the Title",
+      time: "Released on December 7th, 2021",
+      desc: "This is a long description",
+    },
+    {
+      title: "This is the Title",
+      time: "Released on December 7th, 2021",
+      desc: "This is a long description",
+    },
+    {
+      title: "This is the Title",
+      time: "Released on December 7th, 2021",
+      desc: "This is a long description",
+    },
   ];
 
   return (
     <section id="resume" className="pt-12">
-      <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" />
+      {/* <hr className="h-px max-w-screen-xl mx-auto bg-gray-200 border-0" /> */}
       <div className="max-w-screen-xl m-auto px-4 py-8 lg:px-6 sm:py-16 lg:py-24">
         {/* Resume Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16 lg:mb-20">
@@ -56,11 +65,15 @@ const Resume = () => {
             </h3>
           </div>
           <div>
-            <ol className=" md:grid grid-flow-row grid-cols-2">
+            <div className=" md:grid grid-flow-row grid-cols-2">
               {experienceList.map((item) => (
-                <li className="mb-10 ml-6">{item}</li>
+                <ExperienceCard
+                  title={item.title}
+                  time={item.time}
+                  desc={item.desc}
+                />
               ))}
-            </ol>
+            </div>
           </div>
         </div>
         {/* Education & Certifications */}
@@ -76,11 +89,15 @@ const Resume = () => {
             </h3>
           </div>
           <div className="">
-            <ol className="items-center flex flex-row overflow-y-auto">
+            <div className="items-center flex flex-row overflow-y-auto">
               {educationList.map((item) => (
-                <li className="mb-8">{item}</li>
+                <EducationCard
+                  title={item.title}
+                  time={item.time}
+                  desc={item.desc}
+                />
               ))}
-            </ol>
+            </div>
           </div>
         </div>
       </div>

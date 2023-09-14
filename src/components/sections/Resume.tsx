@@ -5,6 +5,7 @@ import EducationCard from "../cards/EducationCard";
 const Resume = () => {
   const experienceList = [
     {
+      id: 1,
       title: "This is the Title",
       time: "Released on December 7th, 2021",
       desc: "This is a long description",
@@ -13,21 +14,25 @@ const Resume = () => {
 
   const educationList = [
     {
+      id: 1,
       title: "This is the Title",
       time: "Released on December 7th, 2021",
       desc: "This is a long description",
     },
     {
+      id: 2,
       title: "This is the Title",
       time: "Released on December 7th, 2021",
       desc: "This is a long description",
     },
     {
+      id: 3,
       title: "This is the Title",
       time: "Released on December 7th, 2021",
       desc: "This is a long description",
     },
     {
+      id: 4,
       title: "This is the Title",
       time: "Released on December 7th, 2021",
       desc: "This is a long description",
@@ -68,6 +73,7 @@ const Resume = () => {
             <div className=" md:grid grid-flow-row grid-cols-2">
               {experienceList.map((item) => (
                 <ExperienceCard
+                  key={item.id}
                   title={item.title}
                   time={item.time}
                   desc={item.desc}
@@ -92,6 +98,7 @@ const Resume = () => {
             <div className="items-center flex flex-row overflow-y-auto">
               {educationList.map((item) => (
                 <EducationCard
+                  key={item.id}
                   title={item.title}
                   time={item.time}
                   desc={item.desc}

@@ -45,7 +45,7 @@ const Hero = () => {
             lg:text-4xl 
             xl:text-5xl"
           >
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span
               className="text-transparent bg-clip-text 
               bg-gradient-to-tr from-primary-800 to-pink-500"
@@ -79,8 +79,9 @@ const Hero = () => {
             I am your gateway to unleashing the potential of data. Crafting
             captivating data visualizations, immersive dashboards, and
             transformative data platforms is my expertise. From concept to
-            deployment, I'm your partner in leveraging data's power for a
-            competitive edge. Explore the future of data-driven success with me.
+            deployment, I&apos;m your partner in leveraging data&apos;s power
+            for a competitive edge. Explore the future of data-driven success
+            with me.
           </p>
           <div className="flex md:order-2">
             <button

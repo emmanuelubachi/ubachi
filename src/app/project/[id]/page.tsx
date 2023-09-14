@@ -10,7 +10,7 @@ const project = ({ params }: { params: String }) => {
 
   return (
     <section>
-      <hr className="h-px my-0 bg-gray-200 border-0" />
+      {/* <hr className="h-px my-0 bg-gray-200 border-0" />
       <div className="relative h-[60vh] overflow-hidden bg-fixed">
         <Image
           className="bg-fixed"
@@ -37,7 +37,7 @@ const project = ({ params }: { params: String }) => {
         />
       </div> */}
 
-      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+      {/* <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
           <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-4 lg:mb-6 not-format">
@@ -91,9 +91,11 @@ const project = ({ params }: { params: String }) => {
               conveniently built with the utility classes from Tailwind CSS.
             </p>
             <figure>
-              <img
+              <Image
                 src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png"
-                alt=""
+                alt="image alt"
+                width={500}
+                height={500}
               />
               <figcaption>Digital art by Anonymous</figcaption>
             </figure>
@@ -111,7 +113,7 @@ const project = ({ params }: { params: String }) => {
             </p>
           </article>
         </div>
-      </main>
+      </main> */}
     </section>
   );
 };
